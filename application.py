@@ -36,6 +36,7 @@ def finish():
 def finaly():
     """here make the bill for the user"""
     os.system("cls")
+    os.system("clear")
     total = 0
     for i in PRIC:
         multy = float(LIST.count(i)) * float(PRIC[i])
@@ -86,6 +87,7 @@ def cards(total):
 
         raw_input("Press enter")
         os.system("cls")
+        os.system("clear")
         reset()
         menu()
 
@@ -105,6 +107,7 @@ def question():
     quest = quest.lower()
     if quest == "y" or quest == "yes":
         os.system("cls")
+        os.system("clear")
         articles()
     elif quest == "n" or quest == "no":
         menu()
@@ -121,7 +124,8 @@ def articles():
             if article == "done":
                 print "You can't write done here!"
                 question()
-                os.system()
+                os.system("cls")
+                os.system("clear")
             if  str(article).isalpha() == True:
                 print "article Added"
                 INV[article] = ""
@@ -141,6 +145,7 @@ def articles():
             if float(price):
                 PRIC[article] = price
                 os.system("cls")
+                os.system("clear")
                 pri = False
                 question()
             else:
@@ -157,6 +162,7 @@ def menu():
     """Here we create a menu that shows the options that user can select!"""
     while True:
         os.system("cls")
+        os.system("clear")
         print u""" /$$      /$$                  /$$                 /$$        """
         print u"""| $$$    /$$$                 | $$                | $$        """
         print u"""| $$$$  /$$$$ /$$$$$$  /$$$$$$| $$   /$$ /$$$$$$ /$$$$$$       """
